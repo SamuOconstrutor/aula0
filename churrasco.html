@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title> calculadora de carne para churrasco</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- algoritmo para calcular o churrasco
+         Adultos (por pessoa):
+Quantidade de carne para homens: 400 gramas
+Quantidade de carne para mulheres: 300 gramas
+Acompanhamentos: 200 gramas
+Quantidade de bebida não alcoólica (refrigerante, suco e água): 1,5 litro
+Quantidade de cerveja: 5 latas ou long necks
+ 
+Crianças de até 11 anos (por pessoa):
+Quantidade de carne: 200 gramas
+Quantidade de bebida não alcoólica (refrigerante, suco e água): 750 ml
+ 
+Carvão: 5 quilos para 6 quilos de carne  
+         Samuel Pinheiro 05/05/2022-->
+    <script>
+        let homens,mulheres,consumoHomens,consumoMulheres,pessoas,bebidas,carvao,consumoTotal;
+        homens=parseInt(prompt("Digite a quantidade de homens, SE não houver homens digite 0"));
+        mulheres=parseInt(prompt("Digite a quantidade de mulheres, SE não houver mulheres digite 0"));
+        pessoas=(homens+mulheres);
+        consumoHomens=homens*400;
+        consumoMulheres=mulheres*300;
+        bebidas=pessoas*1.5;
+        consumoTotal=consumoHomens+consumoMulheres;
+        carvao=consumoTotal/6000;
+        alert("total de pessoas " + pessoas); 
+        alert("o total de carne é igual a: "+ consumoTotal + "kg");
+        alert("consumo de carne por homens " + consumoHomens + "kg"); 
+        alert("consumo de carne por mulheres " + consumoMulheres + "kg" ); 
+        alert("O consumo total de bebidas não alcólicas é de: " + bebidas + "L igual 1,5 litros por pessoa");
+        alert("sacos de carvão necessarios " + Math.ceil(carvao) + " sacos de 5kg");
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
